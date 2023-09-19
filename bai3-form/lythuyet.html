@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Form: hay còn gọi là biểu mẫu nhằm để thu thập dữ liệu gửi lên server.
+        I.Các thuộc tính hay dùng trong form
+        1.action : địa chỉ server nơi nhận dữ liệu của form
+        2.method (get/post)
+        -mặc định nếu không điều giá trị gì thì mặc định get
+        Get:
+        khi gửi dữ liệu lên server thì nội dung các field(trường nhập dữ liệu)
+        sẽ được gửi vào cuối của thanh địa chỉ URL
+        giá trị các field sẽ được gửi lên thông qua thuộc tính name của các field
+        -giới hạn kí tự gửi lên server 2048 kí tự.
+        -dễ bị hack các thông tin mật nên là get không bảo mật bằng post.
+        post:
+        Khi gửi dữ liệu (request) thì dữ liệu sẽ được gửi trong phần body
+        -không giới hạn kí tự khi gửi server.
+        3.enctype : dạng mã hoá kí tự khi gửi lên server
+        application/x-www-form-urlencoded: kiểu mặc định khi mã hoá
+        multipart/form-data : dùng để gửi ảnh, file tập tin lên server
+        text/lan : không cần mã hoá để gửi dữ liệu lên server, dạng mới của HTML5 
+        *********************
+        II. Các trường dữ liệu (field) hay dùng trong form
+
+     -->
+     <form action="" method="get" enctype="text/plain">
+        <label for="email">email</label> <br> <br><br><br>
+        <input type="text" name="email" id="email"
+        placeholder="mời bạn nhập email" autocomplete="off"> <br>
+        <label for="">password</label> <br>
+        <input type="password" name="password" required> <br>
+        <input type="reset" value="reset"> <br>
+        <input type="number"> <br>
+        <input type="date"> <br>
+        <input type="time"> <br>
+        <input type="month"> <br>
+
+        <input type="radio" name="test">A
+        <input type="radio" name="test">B
+        <input type="radio"  name="test">C <br>
+
+        <input type="radio" name="gender" checked >male
+        <input type="radio" name="gender" >female
+        <input type="radio" name="gender">other <br>
+
+        <input type="checkbox">A
+        <input type="checkbox">B
+        <input type="checkbox">C <br>
+
+        <input type="range" max="100" min="0" value="10"> <br>
+        <progress value="25" max="50" ></progress> <br>
+
+        <select name="" id="">
+            <option value="" >1</option>
+            <option value="" selected>2</option>
+            <option value="">3</option>
+        </select>
+        <input type="submit" >
+        <textarea name="" id="" cols="30" rows="10"></textarea> <br>
+        <button>gửi thông tin</button>
+        <button disabled>gửi thông tin</button>
+
+     </form>
+</body>
+</html>
