@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <style>
+       /*  *{
+            background-color: red;
+        } */
+        p{
+            color: green;
+        }
+        .internal{
+            font-size: 30px;
+        }
+        #heading{
+            background-color: blue;
+        }
+        span{
+            display: inline-block;
+            color: violet;
+            width: 500px;
+            height: 500px;
+            background-color: blueviolet;
+        }
+        .title{
+            color: green;
+        }
+        div{
+
+        }
+        button{
+            width: 60px;
+            height: 30px;
+            border: none;
+        }
+        .login{
+            background-color: red;
+
+        }
+        .register{
+            background-color:gold;
+        }
+        .background{
+            /* background: rgb(250, 193, 8); */
+            background-image: url("./asset/images/animal5.jpg");
+        }
+        /* .background{
+            background-color: rgb(250, 193, 8);
+        } */
+        a{
+            text-decoration:none;
+        }
+        /* ol{
+            list-style: none;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- 
+        CSS: Cascading style sheets  : ngôn ngữ dùng để tạo phong cách cho trang web
+        HTMl: tạo các định dạng cho trang web như các thẻ, ảnh.....
+        CSS : có thể thay đổi bố cục,màu sắc, kích thước phông chữ, màu.....
+
+        I. có 3 cách viết CSS cho trang web
+        Cách1: inline là viết CSS trực tiếp vào từng thẻ.
+        Cách2: internal tạo 1 cặp thẻ style rồi viết CSS trong đó.
+        Cách3: external tạo 1 file có đuôi .css sau đó nhúng nó vào trang web rồi viết
+        css trong đó.
+        II. Các bộ chọn selector
+        1. gọi theo tên thẻ
+        2. gọi theo tên class
+        .....
+        III. Các thuộc tính cơ bản
+        1.color: màu chữ
+        có các màu kiểu
+        + theo tên tiếng anh: red, blue, green
+        + theo kiểu màu  rgb ( red, green,blue)
+        + theo màu rgba       ( a : opacity: độ đậm nhạt của màu)
+        + theo kiểu hecxa #
+        + theo kiểu hsl- hue saturation light
+        2.font-size: kích cỡ của chữ
+        3. background-color: màu nền
+        4. width : chiểu rộng 
+        NOTE: đỐi với những thẻ inline thì không set được width, height
+        5. height : chiều cao
+        6. border : độ dày đường viền của khối.
+        -border-radius : bo tròn khối
+        7.hover : khi đưa con trỏ chuột di chuyển vào phần tử
+        8.active: khi đưa con trỏ chuột vào phần tử và click
+        9. font-weight : độ đậm của chữ
+        10. font-family : kiểu chữ
+        11. text-align : căn chỉnh trái , phải , ở giữa text
+        12. text-decoration : none (bỏ gạch chân thẻ a)
+        13. list-style : none bỏ dấu chấm đối với những thẻ ul-li
+
+        IV: box-model :
+
+        
+
+     -->
+     <p style="color: red;"> CSS inline </p>
+     <p class="internal" id="heading"> CSS internal </p>
+     <p class="external"> CSS  external </p>
+     <div>đây là thẻ div</div>
+     <div class="title"> nội dung trang web 
+        <p class="title">Lorem ipsum dolor sit amet.</p>
+     </div>
+
+     <span> title </span>
+     <button class="login">login</button>
+     <button class="register">register</button>
+     <div class="background"> background </div>
+     
+    
+     <a href=""> click </a>
+    <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+
+    <div class="box-model">
+        box-model
+    </div>
+</body>
+</html>

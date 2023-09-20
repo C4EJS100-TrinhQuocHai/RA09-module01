@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* p{
+            color: red;
+        }
+        .title{
+            color: green;
+        } */
+        /* div p{
+            color: red;
+        } */
+        div,p{
+            color: red;
+        }
+        .content+p{
+            color: violet;
+        }
+        ul>li{
+            color: rgb(13, 247, 235);
+        }
+    </style>
+</head>
+<body>
+    <p class="title"> lorem </p>
+    <div class="title">
+        <p class="title">
+            Lorem, ipsum dolor.
+        </p>
+    </div>
+    <div>
+        Lorem ipsum dolor sit amet.
+    </div>
+    <p class="content"> chọn các thành phần liền kề  </p>
+    <p > chọn các thành phần liền kề 1 </p>
+    <p> chọn các thành phần liền kề 2 </p>
+    <ul>
+        <li>
+             thẻ li1
+            <p>
+                <ul>
+                    <li>li cháu </li>
+                </ul>
+            </p>
+        </li>
+        <li> thẻ li2</li>
+        <li> thẻ li3</li>
+    </ul>
+
+</body>
+</html>
