@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns:1fr 1fr 1fr;/* frack */
+            grid-template-rows: 100px 200px 300px;
+        }
+        .item{
+           
+            background-color: red;
+            border: 1px solid black;
+
+        }
+        .grid-item2{
+             grid-column: 2/4;
+        }
+        .grid-item5{
+            /* grid-column-start: 2;
+            grid-column-end: 4; */
+           
+        }
+        .grid-item3{
+            grid-row: 2/4;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        flex: dàn layout 1 chiều.
+        layout phụ thuộc flex-direction
+        grid: dàn lauout 2 chiều.
+        + grid-container
+        + grid-item
+
+        + grid area ( khu vực )
+        ==> đối với grid area thì sẽ dựng khu vực trưỚc cho grid container
+        rồi mới chia cho grid-item
+     -->
+     <div class="container">
+        <div class="grid-item item">1</div>
+        <div class="grid-item2 item">2</div>
+        <div class="grid-item3 item">3</div>
+        <div class="grid-item item">4</div>
+        <div class="grid-item5 item">5</div>
+     </div>
+</body>
+</html>

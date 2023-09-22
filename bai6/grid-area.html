@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: 
+            "header header header"
+            "nav    nav    nav "
+            "main   aside  aside "
+            "main   aside  aside "
+            "footer footer footer";
+          
+           grid-template-rows: 100px 100px 100px 100px 100px; 
+        }
+        .header{
+            background-color: blue;
+            grid-area: header;
+        }
+        .nav{
+            background-color: red;
+
+            grid-area: nav;
+        }
+        .main{
+            grid-area: main;
+            background-color: violet;
+
+        }
+        .aside{
+            background-color: yellow;
+
+            grid-area: aside;
+        }
+        .footer{
+            background-color: green;
+            
+            grid-area: footer;
+        }
+       /*  .item{
+            height: 100px;
+        } */
+    </style>
+</head>
+<body>
+    <!-- 
+        grid area
+     -->
+     <div class="container">
+        <div class="header item">
+            header
+        </div>
+        <div class="nav item">
+            nav
+        </div>
+        <div class="main item">
+            main
+        </div>
+        <div class="aside item">
+          aside
+        </div>
+        <div class="footer item">
+            footer
+        </div>
+     </div>
+</body>
+</html>
