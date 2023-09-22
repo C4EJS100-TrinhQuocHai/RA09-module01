@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .position{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* position: relative;
+            top: 50px;
+            left: 50px; */
+            /* margin-top: 50px; */
+            height: 2000px;
+            margin-top: 100px;
+
+        }
+        /* p{
+           position: relative;
+           bottom: 50px;
+        } */
+        .absolute{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            position: relative;
+        }
+        .absolute__p{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            position: absolute;
+            /* top: 0;
+            right: 0; */
+            right: 50px;
+            bottom: 50px;
+
+        }
+        .header{
+            height: 100px;
+            background-color: rgb(77, 247, 54);
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        /* 
+            Animation
+            transiton
+            transform
+            grid
+         */
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo ">
+            logo
+        </div>
+    </header>
+    <div class="position">
+        relative
+    </div>
+
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <div class="absolute">
+        <p class="absolute__p"> position absolute </p>
+    </div>
+</body>
+</html>

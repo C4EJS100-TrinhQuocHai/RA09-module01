@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle{
+            width: 100px;
+            height: 100px;
+            border: 3px solid violet;
+            border-radius: 50%;
+            border-right: 3px solid black;
+            border-left: 3px solid blue;
+            border-bottom: 3px solid tomato;
+            animation: an 1s ease-in infinite ;
+            /* an là tên hiệu ứng
+               1s : là thời gian chạy hết hiệu ứng
+               ease : tốc độ chuyển động (nhanh chậm)
+               infinite : số lần chuyển động ( infinite là chạy không dừng)
+             */
+        }
+         .anni{
+            width: 100px;
+            height: 100px;
+            border: 3px solid violet;
+            border-radius: 50%;
+            border-right: 3px solid black;
+            border-left: 3px solid blue;
+            border-bottom: 3px solid tomato;
+            animation: an 1s ease-in infinite ;
+            /* an là tên hiệu ứng
+               1s : là thời gian chạy hết hiệu ứng
+               ease : tốc độ chuyển động (nhanh chậm)
+               infinite : số lần chuyển động ( infinite là chạy không dừng)
+             */
+        }
+        .animation{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation:translate 3s linear infinite 5s;
+        }
+        @keyframes translate{
+            0%{
+                 transform: translateX(0);
+            }   
+            50%{
+                transform: translateX(500px);
+            }
+            100%{
+                transform: translateX(0);
+            }
+        }
+        @keyframes an {
+        
+         to{
+            transform: rotate(360deg);
+         }
+        }
+       
+
+    </style>
+</head>
+<body>
+    <div class="circle anni">
+
+    </div>
+    <div class="animation ">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            font-size: 50px;
+            --button: green;
+            --font: 16px;
+        }
+
+        .heading {
+            font-size: 1.5rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container__header {
+            display: inline-block;
+            background-color: green;
+            width: 200px;
+            height: 200px;
+            font-size: var(--font);
+        }
+
+        .container__main {
+            display: inline-block;
+            background-color: var(--button);
+            width: 200px;
+            height: 200px;
+            margin: 0 20px;
+
+        }
+
+        .container__footer {
+            display: inline-block;
+            background-color: violet;
+            width: 200px;
+            height: 200px;
+        }
+
+        .em {
+            background-color: red;
+            font-size: 25px;
+        }
+
+        .em p {
+            font-size: 2em;
+        }
+
+        ul li:nth-child(odd) {
+            color: red;
+            background-color: red;
+        }
+
+        .shadow {
+            text-shadow: -12px -6px 2px #1C6EA4;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 
+        Quy tắc đặt tên class 
+        -không nên đặt số
+        -đặt theo tên tiếng anh
+        -nên đặt theo chuẩn BEM
+        BEM:
+        block :thằng cha thằng to nhất
+        element : thằng con
+        modifier : bổ nghĩa cho block or element
+
+        ******************
+
+        Trước khi đi CSS phải reset CSS
+        để đưa CSS về trạng thái ban đầU không ăn theo màn hình lúc đầu
+
+        **********************
+        Ngoài px,% còn có đơn vị khác là em,rem
+        1.rem phụ thuộc vào màn hình
+        2.em phụ thuộc vào thằng cha chứa nó.
+
+        **********************
+        CSS3 : phiên bản mới của CSS 
+        -cung cấp các bộ chọn selector mới
+        1. mã màu : rgba,hsl,hsla,
+        2. bổ bóng : drop shadow
+        
+        *************************
+        position : định vị trí
+        1. static
+        2. relative : vị trí tương đối
+        nó sẽ lấy vị trí ban đầu của nó đang đứng làm gốc
+        rồi mình set các thuộc tính
+        top,left,bottom,right
+        3. absolute : vị trí tuyệt đối 
+        -nó sẽ ăn theo thằng  chứa nó gần nhất nó thuộc tính là position 
+        nếu thằng  chứa nó không có position thì ăn theo màn hình trình duyệt
+        4. fixed    : làm thanh header 
+         tạo thanh cố định 
+        5. sticky   :  khi dùng thanh cuộn scroll thì ăn theo 
+        *****************
+     -->
+    <div class="em">
+        <p>đơn vị em </p>
+    </div>
+
+    <p class="shadow"> lorem </p>
+    <div class="heading">
+        Lorem ipsum dolor sit amet.
+    </div>
+    <div class="container">
+        <div class="container__header">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Sapiente vitae adipisci libero nisi dolore porro neque cumque corporis,
+            placeat quibusdam quod, dolorem veniam eius in.
+        </div>
+
+        <div class="container__main">
+            main
+        </div>
+        <div class="container__footer">
+            footer
+        </div>
+    </div>
+
+    <ul>
+        <li> thẻ li thứ 1</li>
+        <li> thẻ li thứ 2</li>
+        <li> thẻ li thứ 3</li>
+        <li> thẻ li thứ 4</li>
+        <li> thẻ li thứ 5</li>
+    </ul>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 8.4</title>
+    <style>
+        .bigbox {
+            width: 500px;
+            height: 500px;
+            background-color: whitesmoke;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .box1 {
+            width: 100vw;
+            display: flex;
+        }
+        a {
+            text-decoration: none;
+            margin-left: 30px;
+            margin-bottom: 10px;
+            color: black;
+            display: block;
+        }
+        .active:active {
+            border-bottom: 5px solid blue;
+            border-radius: 5px;
+        }
+        .box2 {
+            width: 95%;
+            border: 4px solid white;
+            background-color: white;
+            border-radius: 3px;
+            text-align: center;
+            margin-left: 7px;
+        }
+
+        .box21 {
+            justify-content: center;
+            display: flex;
+            margin-top: 10px;
+
+        }
+        .box22 {
+            background-color: blanchedalmond;
+            width: 100px;
+            height: 60px;
+            margin-left: 30px;
+        }
+
+        .box23 {
+            display: flex;
+        }
+
+        .colorv {
+            color: rgb(3, 3, 3);
+            width: 100px;
+            height: 60px;
+            margin: 20px;
+            background-color: violet;
+        }
+
+        .colorv:active {
+            border: 5px solid black;
+        }
+
+        .coloro:active {
+            border: 5px solid black;
+        }
+
+        .colorg:active {
+            border: 5px solid black;
+        }
+
+        .coloro {
+            background-color: orange;
+            color: rgb(3, 3, 3);
+            width: 100px;
+            height: 60px;
+            margin: 20px;
+        }
+
+        .colorg {
+            background-color: greenyellow;
+            color: rgb(3, 3, 3);
+            width: 100px;
+            height: 60px;
+            margin: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="bigbox">
+        <h1>My Rewards</h1>
+        <nav class="box1">
+            <a class="active" href="#">Summary</a>
+            <a class="active" href="#">About TripGuide Rewards</a>
+        </nav>
+        <div class="box2">
+            <div class="box21">
+
+                <div>
+                    <P><strong>Elite starus</strong> <br>points Earmed in 2023</P>
+
+                </div>
+                <div class="box22">
+                    <p>18.592 <br>(37 USD)</p>
+                </div>
+            </div>
+
+            <p>StrongLorem ipsum dolor sit amet.</p>
+            <div class="box23">
+
+                <p class="colorv">box violet <br> 0</p>
+                <p class="coloro">box orange <br> 10.00</p>
+                <p class="colorg">box green <br> 0</p>
+            </div>
+        </div>
+
+    </div>
+    </div>
+</body>
+
+</html>
