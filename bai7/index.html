@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .responsive {
+            background-color: red;
+            font-size: 20px;
+
+        }
+        @media screen and (max-width:1200px) {
+            .responsive {
+                background-color: green;
+            }
+        }
+        @media screen and (max-width:992px) {
+            .responsive {
+                background-color: gold;
+            }
+        }
+        @media screen and (max-width:768px) {
+            .responsive {
+                background-color: rgb(9, 5, 243);
+            }
+        }
+        @media screen and (max-width:576px) {
+            .responsive {
+                background-color: rgb(231, 8, 131);
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        Responsive  web design 
+        (thiết kế web đáp ứng các màn hình khác nhau);
+        I. mobile first : việc thiết kế web tương thích với điện thoại trước.
+        II. desktop first: thiết kế web tương thích với màn hình máy tính trước.
+
+        Cú pháp responsive
+    1.  max-width: giới hạn độ rộng tối đa
+        VD: max-width:500px thì những màn hình có kích thước nhỏ hơn 500px thì ăn
+        Đối với max-width thì khi viết CSS phải ghi từ lớn xuống bé
+        breakpoint
+        mobile: <640px
+        tablet: 640px<X<1200px
+        desktop: >1200px
+        max-width: 1000px{
+            CSS
+        }
+        max-width: 700px{
+            CSS
+        }
+    2.  min-width: yêu cầu kích thước nhỏ nhất
+        VD: min-width:500px thì những màn hình có kích thước phải lớn hơn 500px thì ăn
+        @media screen and ()
+        -phải viết từ bé đến lớn
+
+        min-width: 500px
+        min-width: 1200px 
+
+
+     -->
+    <div class="responsive">
+       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam quibusdam molestias earum. Vel quos, a doloribus dolores officia sint voluptates.
+    </div>
+</body>
+
+</html>
