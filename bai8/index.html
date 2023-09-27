@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 onclick="alert('xin chào!')"> click </h1>
+    <!-- 
+        JS basic
+        html : 
+        css  :
+        Js   :
+        I.các cách nhúng JS vào trang web
+        -có 3 cách
+        Cách 1. tạo cặp thẻ script rồi viết code js vào đó.
+         -đặt ở cuối phần body.
+        Cách 2. viết trực tiếp vào trong Html
+
+        Cách 3. tạo 1 file có đuôi .js viết code trong file js rồi link vào trang html
+        II.Biến, cách khai báo biến
+        1.Biến là gì:
+        dùng để đặt tên mang giá trị đi sử dụng trong JS 
+        2.JS cung cấp 3 cách khai báo biến
+            2.1: var
+            -có thể khai báo lại,có thể gán lại giá trị
+            -phạm vi hoạt động function
+            -có hoisting và truy cập được.
+            hoisting là đưa việc khai báo lên đầu.
+            2.2: let
+            - có thể gán lại giá trị nhưng không khai báo lại được
+            - phạm vi hoạt động block-scope {}
+            - có hoisting nhưng không truy cập được
+            2.3  const  
+            - thường dùng để khai báo hằng số
+            - không thể khai báo lại,gán lại giá trị
+            - khi khai báo phải gán giá trị cho nó, không sẽ báo lỗi
+            - phạm vi hoạt động như (let)
+            - có hosting nhưng không truy cập được
+
+        -Khai báo biến gồm 3 thành phần
+         +  từ khoá khai báo biến : let , const, var
+         +  tên biến: không được viết chữ số đầu tiên,các kí tự đặc biệt
+         trừ _,$, Và tránh các từ khoá đặc biệt trong js vd class,try, catch.
+         NOTE: khi đặt tên biến  theo quy tắc camel-case
+         + giá trị 
+
+        III.Kiểu dữ liệu
+          2 loại kiểu dữ liệU chính
+          I-Kiểu nguyên thuỷ hay còn gọi là primitive-type hay còn gọi là kiểu đơn giản
+          1.undefined  : không có giá trị
+          2.number     : số
+          3.boolean    : đúng sai
+          4.string     : chữ, text
+          5.null       : không có gì mang giá trị null
+          6.NaN        : Not a number (không phải số).
+          đọc thêm (BigInt,Symbol...);
+
+          Để kiểm tra kiểu dữ liệu dùng typeof();
+          II-kiểU dữ liệu phức tạp -hay kiểu dữ liệu tham chiếu- hay reference type
+        IV. Toán tử
+        1.Toán tử số học : +,-,*,/,**,%
+        2.Toán tử so sánh ><,>=,<=,==,===,!=,!==
+        == so sánh giá trị
+        === so sánh giá trị và kiểu dữ liệu
+        3.Toán tử logic : &&,||
+        4.Toán tử gán
+        5.Toán tử tăng giảm
+        6.Toán tử 3 ngôi
+        7.Toán tử nullish
+
+        V. các hàm hay phương thức( method) có sẵn trong JS.
+        + console.log() :in ra tab console
+        + alert ()      : hiển thị hôp thoại thông báo
+        + prompt()      : tạo ô nhập dữ liệU
+        + confirm()     : xác nhận yes hoặc no
+        + document.write: hiểN thị trên trình duyệt
+     -->
+    <script src="./index.js"></script>
+     <script>
+        // console.log("11");
+        // let lastName="nguyễn văn";
+        // console.log(typeof(lastName));
+        // let number=5>4;
+        // let string="fffhf fdfh jjhfh";
+        // let null1="null";
+        // let c="an"/5;
+        // console.log(c);
+            // comment 1 dòng;
+            /* 
+                comment nhiều dòng
+             */
+        console.log("lastName"+"  "+lastName);
+        console.log(`lastName có giá trị là ${lastName}`);
+        // alert(" xin chào !")
+        // let name=prompt("mời bạn nhập tên");
+        let result= confirm("bạn đủ 18 tuổi chưa?")
+        document.write("js basic")
+     </script>
+    
+</body>
+</html>
