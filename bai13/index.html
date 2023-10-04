@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <!-- 
+        Mảng: là 1 kiểu dữ liệu trong JS dùng để chứa nhiều giá trị khác nhau.
+        I- primitive : kiểu dữ liệu nguyên thuỷ
+        ( number, string,boolean,null, undefined , NaN...)
+        II- reference type : kiểu dữ liệu phức tạp
+        -Array
+        -Function
+        -Object
+        III-
+        1.cách khai báo mảng.
+        2.cách lấy các phần tử trong mảng.
+        - phần tử đầu tiên trong mảng có chỉ mục index là 0.
+        - tên mảng [index];
+        - thuộc tính (length): độ dài của mảng hoặc là các phần tử trong mảng.
+        3.CRUD với mảng bằNg cách dùng các phương thức làm việc với mảng.
+        -C: Create  : thêm mới phần tử trong mảng.
+         + push() thêm phần tử vào vị trí cuối cùng của mảng.
+         + unshift(): phương thức thêm phần tử vào vị trí đầu tiên của mảng.
+        -R: Read    : Đọc hay là lấy ra các phần tử trong mảng.
+         + Dùng vòng lặp để lấy ra các phần tử trong mảng.
+         + for
+         + for-in () : trả về index (các chỉ mục trong mảng).
+         + for-of () : trả về giá trị.
+        -U: Update  : cập nhật giá trị trong mảng.
+         + dùng splice
+         + dùng tên mảng [index]= giá trị mớI.
+        -D: Delete  : Xoá phần tử trong mảng.
+         + pop()   : xoá phần cuối cùng trong mảng.
+         + shift   : xoá phần tử đầu tiên trong mảng.
+         + splice   : 
+        4.Các phương thức hay dùng trong mảng.
+         1.reverse() : đảo ngược các phần tử trong mảng.
+         2.join()    : gộp các phần tử trong mảng thành chuỗi.
+         3. slice    : sao chép ra mảng mới, cắt mảng.
+         4. indexof  : kiểm tra phần tử có trong mảng hay không? (-1||index).
+         5. includes : kiểm tra phần tử có trong mảng hay không (true/false).
+         6. concat   : gộp mảng.
+         7. sort ()  : sắp xếp các phần tử trong mảng theo bảng ASSCI.
+         8. filter ():lọc.
+         9. map()    : duyệt mảng trả về số phần tử bằng số phần tử ban đầu.
+         10.forEach() : duyệt mảng tương tác trực tiếp các phần tử trong mảng.
+         12. reduce () : tính toán
+         ......
+         5.Các phương thức hay dùng trong chuỗi
+         1.split  : cắt chuỗi thành mảng.
+         2.charAt(): lấy kí tự thứ index.
+         3. có thể dùng for( length).
+         4. slice có thể dùng với chuỗi còn splice thì k
+         5. trim(): loại bỏ khoảng trắng ở hai đầu
+          
+     -->
+     <script>
+        // let users =[];
+        // let users = new Array();
+        // let users=["nguyễn văn a","nguyễn văn b",5,[],{}];
+        // console.log(users.length);
+        // let std1=" nguyễn văn a";
+        // let std2 =" nguyễn văn b";
+        // console.log(users[11]);
+
+        // let students1=[1,8,9,11,6,5,"minh"];
+        // console.log("j">"i");
+        // let students2 = ["minh", "an", "huệ", "nhung"];
+        let arrs=[[[],[],[],],[8,4,3,15,22],[9,4,7]];
+        for (let i = 0; i < arrs.length; i++) {
+           for (let j = 0; j < arrs[i].length; j++) {
+            console.log(arrs[i][j]);
+           }
+            
+        }
+
+        // let text="     hello &r&a";
+       
+        // let result=text.trim();
+        
+        // console.log(result.length);
+        // students.splice(1,1,"Hà");
+        
+            // students.push("hồng");
+            // students.unshift("an");
+            //     students.splice(1,0,"Hồng");
+            //     console.log(students);
+            //    for (let i = 0; i < students.length; i++) {
+            //         console.log(students[i]);
+                
+            //    }
+            // for (let tenThoi in students) {
+              
+            //    console.log(students[tenThoi]);
+              
+            // }
+            // for (const ten of students) {
+            //         console.log("tên",ten);
+            // }
+            
+
+        
+     </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+        let maThe="2526";
+        let number=prompt("mời nhập mã thẻ");
+        let count=0;
+        do{
+                // thực  thi sau đó mới kiểm tra điều kiện
+                // chạy ít nhất 1 lần.
+                if(maThe==number){
+                    break;
+                }else{
+                    number=prompt("mời bạn nhập lại");
+                    count++;
+                }   
+        }while(count<3);
+
+       
+    </script>
+</body>
+</html>

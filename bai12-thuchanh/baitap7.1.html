@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /* 
+            nhập đÚng đi  đã rồi mới đi xử lý
+         */
+        // let number = +prompt("mời nhập số lớn hơn 2 và bé hơn 100");
+        // while(number<2||number>100){
+        //         number=+prompt("mời nhập lại số lớn hơn 2 và bé hơn 100");
+        // }
+        // lấy đúng đi xử lý 
+        // console.log(number);
+        // console.log(Math.random()*9); /* 0<= X <1 */
+        //Math.floor(): làm tròn xuống
+        //Math.ceil(): làm tròn lên
+        /*   for (let i = 10; i >= 1; i--) {
+              for (let j = 1; j <= 10; j++) {
+                  if(j>=i){
+                      document.write("*");
+                  }else{
+                      document.write("&nbsp&nbsp");
+                  }
+              }
+              document.write("<br>")
+          }
+          for (let i = 1; i <=10 ; i++) {
+                  for (let j = 1; j <= 10; j++) {
+                      if (j >= i) {
+                          document.write("*");
+                      } else {
+                          document.write("&nbsp&nbsp");
+                      }
+                  }
+                  document.write("<br>")
+              } */
+
+
+        /* Bài nhập số */
+       /*  let random = Math.ceil(Math.random() * 10); // tạo số ngẫu nhiên từ 1 đến 10
+        let count = 1;
+        let number = +prompt("mời bạn nhập số từ 1 đến 10");
+        while (count < 3) {
+            if(number==random){
+              console.log("bạn đã đoán đúng");
+              break;
+            }else if(number>=1 && number<=10){
+                if(number>random){
+                    number=prompt(`bạn phải nhập số bé hơn ${number}`)
+                    count++
+                }else{
+                    number=prompt(`bạn phải nhập số lớn hơn ${number}`);
+                    count++
+                }
+            }else{
+                number = +prompt("mời bạn nhập lại số từ 1 đến 10");
+                count++;
+            }
+            if(count==3){
+                console.log("bạn đã hết lượt chơi!");
+            }
+        } */
+        // [5==>11];
+        // let number=+prompt("mời bạn nhập số");
+        // for (let i = 1; i <=number; i++) {
+        //    for (let j = 0; j <number ; j++) {
+        //     document.write(j+i);
+        //    }
+        //     document.write("<br>");
+        // }
+        let text="Hello world";
+        let result="";
+        for (let i = text.length-1; i >=0 ; i--) {
+            console.log(text[i]);
+            result+=text[i];
+            
+        }
+        console.log(result);
+
+    </script>
+</body>
+
+</html>
