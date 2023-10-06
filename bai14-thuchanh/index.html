@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[4,5,8,7,9,7,4,3];
+        /* 
+        sắp xếp các phần tử trong mảng theo thứ tự tăng dần
+        dùng thuật toán bubble sort để sắp xếp
+        bubble-sort sẽ so sánh 2 phần tử liền kề, mỗi lần lặp sẽ đưa thằng lớn nhất
+        về vị trí cuối cùng 
+         */
+        for (let i = 0; i < arr.length; i++) {
+          for (let j = 0; j < arr.length; j++) {
+                if(arr[j]>arr[j+1]){
+                    let temp=arr[j];
+                    arr[j]=arr[j+1];
+                    arr[j+1]=temp;
+                }
+          }
+        }
+        console.log(arr);
+        // let result= arr.sort((a,b)=>{
+        //         return a-b;
+        // })
+        // console.log(result);
+        let text1="";
+        let text2="";
+        if(text1==text2){
+            
+        }
+    </script>
+</body>
+</html>

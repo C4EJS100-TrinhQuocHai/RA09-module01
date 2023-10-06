@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*     let arrs=[];
+        while(arrs.length<3){
+            let number=+prompt("mời bạn nhập số nguyên");
+            if(Number.isInteger(number)){
+                if(arrs.indexOf(number)==-1){
+                    arrs.push(number);
+                }else{
+                number = +prompt(`mời bạn nhập lại số nguyên khác ${number} `);
+
+                }
+            }else{
+                number = +prompt("mời bạn nhập lại số nguyên");
+            }
+        }
+        console.log(arrs); */
+        let arrs1=[5,6,73,2,45,6,7,8,87,88,56];
+
+       
+       /*  let result= Array.from(new Set (arrs2));
+        console.log(result); */
+        // loại bỏ các phần tử trùng nhau trong mảng arrs2;
+
+       /*  let result=[];
+        for (let i = 0; i < arrs2.length; i++) {
+                if(!result.includes(arrs2[i])){
+                    result.push(arrs2[i]);
+                }
+        }
+        console.log(result); */
+         let arrs2 = [ 5, 5, 1, 1, 1,5,5,5,6,6,55,6,5,1,1,1];
+        for (let i = 0; i < arrs2.length; i++) {
+            for (let j = i+1; j < arrs2.length; j++) {
+                if(arrs2[i]==arrs2[j]){
+                    arrs2.splice(j,1);
+                    j--;
+                }
+            }
+           
+        }
+        /* 
+        i=0;
+        [5,1,1,1,5,1,1,1]
+        j=1
+         */
+        console.log(arrs2);
+
+     
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* Bài kiểm tra từ đối xứng */;
+        let text=prompt("mời bạn nhập chuỗi bất kì");
+        function check(params) {
+            let result=text.split("").reverse().join("");
+            if(result==text){
+                return true;
+            }
+            return false;
+        }
+        if(check()){
+            console.log("là chuỗi đỐi xứng");
+        }else{
+            console.log("không phải chuỗi đối xứng");
+        }
+    </script>
+</body>
+</html>
