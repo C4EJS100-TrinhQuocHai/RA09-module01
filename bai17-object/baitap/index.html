@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        ĐỀ BÀI: cho 1 mảng let products=[{},{}];
+     -->
+    <script>
+        let products = [
+            {
+                id: 1,
+                name: "iphone5",
+                price: 5000,
+                count:5,
+            },
+            {
+                id: 2,
+                name: "quan au",
+                price: 5200,
+                count: 7,
+            },
+            {
+                id: 3,
+                name: "mi tom",
+                price: 6600,
+                count: 8,
+            },
+            {
+                id: 4,
+                name: "mien",
+                price: 7600,
+                count: 8,
+            },
+            {
+                id: 5,
+                name: "xa phong",
+                price: 3600,
+                count: 8,
+            },
+        ]
+        let text=prompt("mời nhập từ cần tìm kiếm!");
+            let result=[];
+            for (let i = 0; i < products.length; i++) {
+                if(products[i].name.indexOf(text)!=-1){
+                    result.push(products[i])
+                }
+                
+            }
+            console.log(result);
+              
+            
+
+            // products.push(newProduct);
+            // // for (let i = 0; i < products.length; i++) {
+            // //     if(products[i].id==2){
+            // //         products.splice(i,1);
+            // //     }
+                
+            // // }
+          
+            // products.splice(products.findIndex((item) => {
+            //         return item.id == 2
+            //     }),1)
+            //     console.log(products);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+            Khởi tạo đối tượng con mèo, bao gồm các thuộc tính và phương
+            thức
+            thuộc tính: cân nặng, tên,...
+            phương thức: bắt chuột, kêu...
+
+         */
+         function MyCat(weight,name) {
+            this.weight=weight;
+            this.name  =name;
+            this.setSpeed=function(speed){
+                this.speed=speed;
+            }
+            this.getSpeed =function(){
+                return this.speed;
+            }
+         }
+         let Tom=new MyCat("30kg","Tôm");
+
+         Tom.setSpeed("30km/h");
+
+         console.log(Tom.getSpeed());
+
+         console.log(Tom);
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        tham chiếu tham trị trong object.
+        object thuộc kiểu dữ liệu phức tạp.
+        dữ liệu sẽ đưỢc lưu ở vùng nhớ heap trong máy tính.
+        -Khi gán object này cho object khác bản chất là đang đi gán
+        lại địa chỉ.(tức là 2 object có cùng địa chỉ.)
+        ************
+        Các cách clone object.
+        I  -shallow clone
+              1.toán tử SPREAD
+              2.Object.asign
+        II -deep clone clone hết
+        3.chuyển sang định dạng JSON
+        chuyển: JSON.stringify()
+        dùng:   JSON.parse
+     -->
+     <script>
+
+        let obj1={
+            name:"hồng",
+            age:25,
+            address:{
+                city:"HCM"
+            }
+        }
+        // let obj2={...obj1};
+        // let obj2=Object.assign({},obj1);
+        let obj2=JSON.parse(JSON.stringify(obj1))
+        obj1.name="hoa",
+        obj1.address.city="HN";
+        console.log(obj2);
+     
+     </script>
+</body>
+</html>

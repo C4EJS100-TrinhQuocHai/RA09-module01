@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let std1={
+        //     name:"hoàng",
+        //     age:20,
+        // }
+        // let std2={
+        //     name:"hoa",
+        //     age:25
+        // }
+        // hàm tạo constructor
+        function Student(name12,age12) {
+            this.name=name12,
+            this.age=age12,
+            this.sayHello=function(){
+                console.log("ok!");
+            }
+        }
+        let std1= new Student("hoa",25);
+        console.log(std1.sayHello());
+        let std2= new Student("nam",20);
+    </script>
+</body>
+</html>

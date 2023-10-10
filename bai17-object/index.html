@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Object: Đối tượng là 1 thực thể bao gồm thuộc tính và phương thức
+        Vd: 1 đối tượng con mèo sẽ có thuộc tính và phương thức
+        thuộc tính (property): màu lông, cân nặng, màu mắt...
+        phương thức (hành động): bắt chuột, nhảy, kêu...
+
+        I-Cách khai báo 1 đối tượng
+        II- CRUD với object
+        1.C : CREATE   : Thêm thuộc tính cho đối tượng
+        VD:  muốn thêm thuộc tính address ?
+        2.R : READ
+         dùng for-in
+        3.U :UPDATE
+        4.D : DELETE Xoá thuộc tính  đối tượng
+     -->
+     <script>
+        //iife Immediately  invoke function expression
+       
+       /*  let a=7;
+        (function hello() {
+            console.log("hello1");
+        })();
+         (function hello() {
+                console.log("hello2");
+            })() */
+        let student ={
+            name :"hoa",
+            age:25,
+            // name:"hồng",
+            address:"hà nội",
+            sayHello:()=>{
+                console.log(this);
+            }
+        }
+      
+        console.log(student.sayHello());
+        // student.name.age = 20
+        // console.log(student.name);
+        // console.log(student.name);
+        // console.log(student.age);
+
+        // student.address="hà nội";
+        //    for (const abc in student) {
+        //     //  console.log(abc);// name, age
+        //      console.log(student[abc]);
+            
+        //    }
+        // console.log(student);  
+        // student.name="nguyễn văn b";
+        // console.log(student);
+        // toán tử rest
+            function check(...a) {
+                console.log(a);
+            }
+            check(1,2,6,5,8,9)
+     </script>
+</body>
+</html>
