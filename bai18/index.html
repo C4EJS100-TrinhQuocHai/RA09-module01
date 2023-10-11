@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        
+        let stores = [
+            { id: 1, name: "milk", count: 100 },
+            { id: 2, name: "yakult", count: 100 },
+            { id: 3, name: "butter", count: 100, }
+        ];
+        let carts = [];
+        function check() {
+            while (true) {
+                let text = prompt("mời nhập C/R/U/D/E");
+                switch (text) {
+                    case "C":
+                        let product=prompt("mời nhập tên sản phẩm muốn mua!");
+                        // tìm kiếm sản phẩm trong stores
+                        let result= stores.find((item)=>{
+                            return item.name==product;
+                        })
+                        console.log(result);
+                        // result là sản phẩm muốn mua 
+                        // điều kiện khi người dùng phải nhập đúng đã
+                        if(result){
+                            for (let i = 0; i < stores.length; i++) {
+                                if(stores[i].name==result.name){
+                                    stores[i].count==--stores[i].count;
+                                }
+                            }
+                            let check=carts.filter((item)=>{
+                                return item.name== product;
+                            })
+                            // tức là đã có trong  giỏ hàng
+                            if(check.length!=0){
+                                for (let i = 0; i < carts.length; i++) {
+                                    if(carts[i].name==product){
+                                        carts[i].count=++carts[i].count;
+                                    }
+                                }
+                                console.log("cart",carts);
+                            }
+                            else {
+                                carts.push({ ...result, count: 1 });
+                            }
+                            console.log("stores", stores);
+                        }else{
+                            console.log("sản phẩm không có trong giỏ hàng!");
+                        }
+                        console.log(carts);
+                        break;
+                    case "R":
+
+                        break;
+                    case "U":
+
+                        break;
+                    case "D":
+
+                        break;
+                      case "E":
+                        return;
+                        break;
+
+                    default:
+                        break;
+                }
+
+            };
+        }
+        check();
+        
+    </script>
+</body>
+
+</html>
