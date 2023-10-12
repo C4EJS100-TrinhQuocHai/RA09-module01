@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        DOM: document object model 
+        mô hình đỐi tượng tài liệu
+        Khi trang web được tải lên thì trình duyệt sẽ tạo ra 1 mô hình DOM
+        Chức năng:
+        giúp có thể CRUD với element,attributes,text
+        *******************
+        Các thành phần trong DOM
+        1.element
+        là các thẻ HTML
+        CÁC CÁCH ĐỂ LẤY ELEMENT
+            1.lấy theo thẻ tag name
+            ==> kết quả trả về là 1 HTML collection dạng mảng.-nhưng k phải mảng.
+            nhưng có thể lấy các phần tử theo index, có thể duyệt for
+            2.lấy theo id
+            ==>trả về  element luôn
+            3.lấy theo class
+            ==> kết quả trả về HTML collection
+            4.lấy theo querySelector
+            -nếu class thì (.), id thì (#);
+            -mặc định trả về 1 element duy nhất.
+            5.lấy theo querySelectorAll.
+            ==> kết quả trả về là 1 NODELIST cũng dạng mảng nhưng không phải mảng
+            có thể lấy phần tử theo index, dùng for, forEach();
+        2.attributes
+        là các thuộc tính
+        3.text
+        nội dung của element
+
+
+     -->
+    <p class="title" id="title">DOM 1111111</p>
+    <p class="title"> element222</p>
+    <h2 id="heading"> lấy theo id </h2>
+
+    <a href=""></a>
+    <script>
+        // let elem=document.getElementById("heading");
+        // let elemt= document.getElementsByClassName("title");
+        let elem= document.querySelector(".title");
+        console.log(elem);
+        
+        // let elem = document.getElementsByTagName("p");
+        // console.log(elem[2]);
+
+        // let arr=[2,5];
+        // arr.push(3)
+        // let obj={
+        //     name:"hoa",
+
+        // }
+        // obj.age=27
+        // document.getElementsByTagName("h1")[0].style.color="red";
+
+
+    </script>
+</body>
+
+</html>

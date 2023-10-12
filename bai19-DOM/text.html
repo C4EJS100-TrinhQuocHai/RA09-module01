@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        TEXT.
+        1.innerText
+        2.textContent
+        3.innerHTML
+
+     -->
+     <div>
+          DOM BASIC
+        <p style="display: none;">
+            lorem
+        </p>
+    </div>
+     
+     <script>
+        let elem= document.getElementsByTagName("div")[0];
+        // elem.innerText="DOM advanced";
+        //  elem.innerHTML='<h1> hello </h1>';
+     elem.innerHTML=
+     `
+        DOM BASIC
+        <h2 >
+            lorem
+        </h2>
+     `
+
+     </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <!-- 
+        Event: sự kiện
+
+     -->
+     <input  type="text" id="text" >
+     <!-- test() ĐÂY CHÍNH XÁC LÀ LỜI GỌI HÀM -->
+     <button onclick="test()"  id="hello">login </button>
+     <script>
+        // function sayHello() {
+        //         console.log("hello");
+        // }
+       /*  document.getElementById("text").addEventListener("input",()=>{
+             let valueInput=document.getElementById("text").value;
+               console.log(valueInput);
+        }) */
+        // function getValue() {
+        //     let valueInput=document.getElementById("text").value;
+        //     console.log(valueInput);
+        // }
+            document.getElementById("body").addEventListener("keydown",(event)=>{
+                    console.log("event",event.keyCode);
+                    switch ("5") {
+                        case 13:
+                            // gọi hàm để gửi giá trị lên server
+                            break;
+                    
+                        default:
+                            break;
+                    }
+            })
+            function test(params) {
+                console.log("rrtettretertert");
+            }
+     </script>
+</body>
+</html>
